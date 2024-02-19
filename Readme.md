@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Николай](https://up.htmlacademy.ru/htmlcss-individual/1/user/2497073).
-* Наставник: `Неизвестно`.
+* Наставник: Михаил Данюшин. (https://htmlacademy.ru/profile/id225742).
 
 ---
 
