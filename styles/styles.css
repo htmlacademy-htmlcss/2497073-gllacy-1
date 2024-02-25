@@ -46,4 +46,19 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+  background-color: #feafc3;
+}
+
+.nav-link {
+  text-align: center;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.nav-phone {
+  font-weight: 700;
+}
+
+.nav-user-link {
+  font-size: 14px;
 }
