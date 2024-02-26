@@ -70,6 +70,14 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.slider-2 {
+  background-color: #69a9ff;
+}
+
+.slider-3 {
+  background: #fcc850;
+}
+
 .slider-title {
   font-weight: 900;
   font-size: 36px;
