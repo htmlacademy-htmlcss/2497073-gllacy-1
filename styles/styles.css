@@ -49,6 +49,10 @@ body {
   background-color: #feafc3;
 }
 
+.nav-list {
+  list-style: none;
+}
+
 .nav-link {
   text-align: center;
   text-decoration: none;
@@ -274,4 +278,23 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #2d3440;
   color: #2d3440;
+}
+
+
+/* Страница каталога */
+
+.breadcrumbs-list {
+  list-style: none;
+}
+.breadcrumbs-link {
+  padding: 1px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-activ {
+  border-bottom: 1px solid #2d3440;
 }
