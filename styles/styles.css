@@ -92,6 +92,10 @@ body {
   list-style: none;
 }
 
+.banner-item {
+  background-color: #f79;
+}
+
 .banner-title-card {
   font-weight: 700;
   font-size: 24px;
@@ -106,9 +110,13 @@ body {
   list-style: none;
 }
 
+.products-item {
+  background-color: #fcfcfc;
+}
+
 .products-link {
   text-decoration: none;
-  color: #2d3440;
+  color: #2d3440;;
 }
 
 .products-title-card {
@@ -125,4 +133,20 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.ceo-container {
+  background-image: url(../images/background/cео.jpg);
+}
+
+.ceo-box {
+  background-color: #fff;
+}
+
+.ceo-list {
+  list-style: none;
+}
+
+.ceo-descr {
+  line-height: 22px;
 }
