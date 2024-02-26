@@ -101,3 +101,28 @@ body {
 .banner-descr {
   line-height: 22px;
 }
+
+.products-list {
+  list-style: none;
+}
+
+.products-link {
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.products-title-card {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.products-descr {
+  line-height: 22px;
+}
+
+.products-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
