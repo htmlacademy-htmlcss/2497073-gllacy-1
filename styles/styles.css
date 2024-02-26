@@ -239,3 +239,39 @@ body {
   font-size: 14px;
   color: #565c66;
 }
+
+.socials-list {
+  list-style: none;
+}
+
+.footer-menu-list {
+  list-style: none;
+}
+
+.footer-menu-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.footer-menu-activ {
+  font-weight: 700;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-copyright-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #2d3440;
+  color: #2d3440;
+}
