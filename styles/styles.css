@@ -166,3 +166,24 @@ body {
   line-height: 30px;
   color: #2d3440;
 }
+
+.subscribe {
+  background-image: url(../images/background/subscribe.jpg);
+}
+
+.subscribe-descr {
+  line-height: 22px;
+  color: #565c66;
+}
+
+.subscribe-box {
+  background-color: #fff;
+}
+
+.btn-form {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+}
