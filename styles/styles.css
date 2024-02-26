@@ -187,3 +187,20 @@ body {
   line-height: 20px;
   color: #fcfcfc;
 }
+
+.delivery-container {
+  background-image: url(../images/background/devilery.jpg);
+}
+
+.delivery-form {
+  background-color: #fcfcfc;
+}
+
+.delivery-descr {
+  line-height: 22px;
+  color: #565c66;
+}
+
+.delivery-label {
+  font-weight: 700;
+}
