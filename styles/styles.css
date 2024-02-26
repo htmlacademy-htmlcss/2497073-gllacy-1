@@ -62,3 +62,21 @@ body {
 .nav-user-link {
   font-size: 14px;
 }
+
+.slider-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-features {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn-link {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #2d3440;
+}
