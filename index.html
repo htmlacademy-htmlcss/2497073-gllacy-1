@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -34,11 +35,11 @@
             </li>
           </ul>
           <ul class="nav-list nav-user">
-            <li class="nav-item">
-              <a class="nav-link" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
+            <li class="nav-user-item">
+              <a class="nav-link nav-phone" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="visually-hidden">Поиск</span>
                 <span class="nav-search">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +50,8 @@
                 </span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-user-item">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="nav-login">
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,8 +62,8 @@
                 Вход
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-user-item">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="nav-cart">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,7 +89,7 @@
                 <p class="slider-features">Натуральное мороженое из&nbsp;свежих сливок
                   и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.
                 </p>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn-link" href="#">Заказать</a>
               </div>
               <div class="slider-img">
                 <button class="btn-reset slider-prev" type="button">
@@ -118,7 +119,7 @@
                 <h2 class="slider-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
                 <p class="slider-features">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть
                   и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn-link" href="#">Заказать</a>
               </div>
               <div class="slider-img">
                 <button class="btn-reset slider-prev" type="button">
@@ -149,7 +150,7 @@
                 <h2 class="slider-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
                 <p class="slider-features">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира
                   завоюет сердца сладкоежек всех возрастов.</p>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn-link" href="#">Заказать</a>
               </div>
               <div class="slider-img">
                 <button class="btn-reset slider-prev" type="button">
@@ -240,13 +241,13 @@
       </section>
       <section class="banner">
         <div class="container banner-container">
-          <h2 class="banner-title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
+          <h2 class="banner-title title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
           <ul class="banner-list">
             <li class="banner-item">
               <h3 class="banner-title-card">Малинка даром!</h3>
               <p class="banner-descr">При покупке 2&nbsp;кг любого фруктового мороженого добавим в&nbsp;ваш заказ
                 банку малинового варенья бесплатно.</p>
-              <a class="btn" href="#">Хочу подарок</a>
+              <a class="btn-link" href="#">Хочу подарок</a>
               <img class="banner-img" src="images/raspberry-horn.png" width="219" height="268"
                 alt="Малина в рожке от мороженого">
             </li>
@@ -254,7 +255,7 @@
               <h3 class="banner-title-card">Маршмеллоу даром!</h3>
               <p class="banner-descr">При покупке 2&nbsp;кг пломбира добавимв&nbsp;ваш заказ упаковку нежных зефирок
                 совершенно бесплатно.</p>
-              <a class="btn" href="#">Хочу подарок</a>
+              <a class="btn-link" href="#">Хочу подарок</a>
               <img class="banner-img" src="images/marshmallows.png" width="219" height="268"
                 alt="Маршмеллоу в рожке от мороженого">
             </li>
@@ -263,7 +264,7 @@
       </section>
       <section class="products">
         <div class="container products-container">
-          <h2 class="products-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+          <h2 class="products-title title">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <div class="products-card">
             <ul class="products-list">
               <li class="products-item">
@@ -340,28 +341,30 @@
       </section>
       <section class="ceo">
         <div class="container ceo-container">
-          <h2 class="ceo-title">Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже
-            мороженого собственного производства на&nbsp;развес</h2>
-          <ul class="ceo-list">
-            <li class="ceo-item">
-              <p class="ceo-descr">Всё наше мороженое изготавливается на&nbsp;собственном производстве
-                с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
-            </li>
-            <li class="ceo-item">
-              <p class="ceo-descr">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего
-                качества. Все ингредиенты
-                и&nbsp;добавки произведены из&nbsp;натурального сырья.</p>
-            </li>
-            <li class="ceo-item">
-              <p class="ceo-descr">Закупка ингредиентов производится только
-                у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми
-                нас связывает долговременное сотрудничество.</p>
-            </li>
-            <li class="ceo-item">
-              <p class="ceo-descr">Доставка нашего мороженого осуществляется в&nbsp;специальном термопаке, который
-                не&nbsp;даёт мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</p>
-            </li>
-          </ul>
+          <div class="ceo-box">
+            <h2 class="ceo-title title">Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже
+              мороженого собственного производства на&nbsp;развес</h2>
+            <ul class="ceo-list">
+              <li class="ceo-item">
+                <p class="ceo-descr">Всё наше мороженое изготавливается на&nbsp;собственном производстве
+                  с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
+              </li>
+              <li class="ceo-item">
+                <p class="ceo-descr">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего
+                  качества. Все ингредиенты
+                  и&nbsp;добавки произведены из&nbsp;натурального сырья.</p>
+              </li>
+              <li class="ceo-item">
+                <p class="ceo-descr">Закупка ингредиентов производится только
+                  у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми
+                  нас связывает долговременное сотрудничество.</p>
+              </li>
+              <li class="ceo-item">
+                <p class="ceo-descr">Доставка нашего мороженого осуществляется в&nbsp;специальном термопаке, который
+                  не&nbsp;даёт мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <div class="container">
@@ -372,27 +375,30 @@
           </a>
         </article>
         <article class="subscribe">
-          <p class="subscribe-descr">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего
-            самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной
-            ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="email" name="email" placeholder="email@example.com" required>
-            <button class="btn-reset btn subscribe-btn" type="submit">Отправить</button>
-          </form>
+          <div class="subscribe-box">
+            <p class="subscribe-descr">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего
+              самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной
+              ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <input type="email" name="email" placeholder="email@example.com" required>
+              <button class="btn-reset btn-form" type="submit">Отправить</button>
+            </form>
+          </div>
         </article>
       </div>
       <section class="delivery">
         <div class="container delivery-container">
           <div class="delivery-text">
-            <h2 class="delivery-title">Доставка любимого мороженого на&nbsp;дом</h2>
+            <h2 class="delivery-title title">Доставка любимого мороженого на&nbsp;дом</h2>
             <p class="delivery-descr">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить
               в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ
               в&nbsp;течение часа!</p>
             <div class="delivery-form">
-              <p class="delivery-descr-form">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами,
+              <p class="delivery-descr delivery-descr-form">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся
+                с&nbsp;вами,
                 чтобы подтвердить заказ.</p>
               <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <label>
+                <label class="delivery-label">
                   Дата
                   <span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,11 +409,11 @@
                   </span>
                   <input type="text" name="date" placeholder="01.04.2020">
                 </label>
-                <label>
+                <label class="delivery-label">
                   Телефон
                   <input type="tel" name="phone" placeholder="+7 800 999-00-00">
                 </label>
-                <label>
+                <label class="delivery-label">
                   Адрес
                   <span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -418,7 +424,7 @@
                   </span>
                   <input type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
                 </label>
-                <button class="btn-reset btn" type="submit">Отправить</button>
+                <button class="btn-reset btn-form" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -426,12 +432,14 @@
       </section>
       <section class="address">
         <div class="container address-container">
-          <h3 class="address-title">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
-          <address class="address-text"><b>наб. реки Карповки, 5&nbsp;лит П, Санкт-Петербург</b></address>
-          <h3 class="address-title">Для заказов по&nbsp;телефону:</h3>
-          <a class="address-phone" href="tel:+78128121212"><b>+7 (812) 812-12-12</b></a>
-          <span class="address-subtext">(с 10 до 20 ежедневно)</span>
-          <button class="bnt-reset btn" type="button">Форма обратной связи</button>
+          <div class="address-box">
+            <h3 class="address-title">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
+            <address class="address-text"><b>наб. реки Карповки, 5&nbsp;лит П, Санкт-Петербург</b></address>
+            <h3 class="address-title">Для заказов по&nbsp;телефону:</h3>
+            <a class="address-phone" href="tel:+78128121212"><b>+7 (812) 812-12-12</b></a>
+            <span class="address-subtext">(с 10 до 20 ежедневно)</span>
+            <button class="btn-reset btn-form" type="button">Форма обратной связи</button>
+          </div>
         </div>
       </section>
       <footer class="footer">
@@ -480,7 +488,7 @@
           <nav class="footer-menu">
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a class="footer-menu-link activ" href="#">Для поставщиков</a>
+                <a class="footer-menu-link footer-menu-activ" href="#">Для поставщиков</a>
               </li>
               <li class="footer-menu-item">
                 <a class="footer-menu-link" href="#">О производстве</a>

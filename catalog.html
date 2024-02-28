@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси - Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -34,11 +35,11 @@
             </li>
           </ul>
           <ul class="nav-list nav-user">
-            <li class="nav-item">
-              <a class="nav-link" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
+            <li class="nav-user-item">
+              <a class="nav-link nav-phone" href="tel:+78005558628"><b>+7 800 555-86-28</b></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-user-item">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="visually-hidden">Поиск</span>
                 <span class="nav-search">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +50,8 @@
                 </span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-user-item">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="nav-login">
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,8 +62,8 @@
                 Вход
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-user-item">
+              <a class="nav-user-link nav-link" href="#">
                 <span class="nav-cart">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -87,19 +88,19 @@
             <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link activ">Сливочное мороженое</a>
+            <a class="breadcrumbs-link breadcrumbs-link-activ">Сливочное мороженое</a>
           </li>
         </ol>
-        <h1 class="breadcrumbs-title">Сливочное мороженое</h1>
+        <h1 class="breadcrumbs-title title">Сливочное мороженое</h1>
       </section>
       <section class="catalog-products">
         <div class="container catalog-container">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <span class="select-title">Сортировка:</span>
           <select class="select-control">
-            <option value="popular">По популярности</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала дешёвое</option>
+            <option value="expensive">сначала дорогое</option>
           </select>
           <span>
             <svg class="select-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
@@ -379,7 +380,7 @@
                 </a>
               </li>
             </ul>
-            <button class="btn-reset btn" type="button">Показать еще</button>
+            <button class="btn-reset btn-show" type="button">Показать еще</button>
             <a class="pagination-left">
               <span class="visually-hidden">Предыдущая страница</span>
               <span>
@@ -393,7 +394,7 @@
             </a>
             <ol class="pagination-list">
               <li class="pagination-item">
-                <a class="pagination-link activ">1</a>
+                <a class="pagination-link pagination-link-activ">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -468,7 +469,7 @@
           <nav class="footer-menu">
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a class="footer-menu-link activ" href="#">Для поставщиков</a>
+                <a class="footer-menu-link footer-menu-activ" href="#">Для поставщиков</a>
               </li>
               <li class="footer-menu-item">
                 <a class="footer-menu-link" href="#">О производстве</a>
