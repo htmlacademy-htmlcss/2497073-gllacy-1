@@ -2,21 +2,23 @@
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/inter-400.woff2) format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/inter-700.woff2) format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
   font-weight: 900;
   font-style: normal;
-  src: url(../fonts/inter-900.woff2) format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -41,7 +43,7 @@ img {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -142,7 +144,8 @@ body {
 
 .products-link {
   text-decoration: none;
-  color: #2d3440;;
+  color: #2d3440;
+  ;
 }
 
 .products-title-card {
@@ -314,6 +317,7 @@ body {
 .breadcrumbs-list {
   list-style: none;
 }
+
 .breadcrumbs-link {
   padding: 1px 0;
   font-weight: 700;
