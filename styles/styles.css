@@ -211,18 +211,33 @@ body {
   line-height: 22px;
 }
 
+.products-title {
+  max-width: 527px;
+}
+
 .products-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
   list-style: none;
 }
 
 .products-item {
+  max-width: 270px;
+  border-radius: 8px;
   background-color: #fcfcfc;
+}
+
+.products-wrapper {
+  padding: 0 40px 24px 40px;
 }
 
 .products-link {
   text-decoration: none;
   color: #2d3440;
-  ;
 }
 
 .products-title-card {
