@@ -61,11 +61,14 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  margin-bottom: 80px;
   padding: 0 15px;
 }
 
-.main-container {
-  flex-grow: 1;
+.header-container,
+.footer-container,
+.address-container {
+  margin-bottom: 0;
 }
 
 .header {
@@ -112,6 +115,16 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+  display: flex;
+}
+
 .slider-2 {
   background-color: #69a9ff;
 }
@@ -131,7 +144,14 @@ body {
   line-height: 24px;
 }
 
+.slider-pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
