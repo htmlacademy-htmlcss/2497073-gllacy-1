@@ -293,6 +293,17 @@ body {
 
 }
 
+.news-container,
+.subscribe-container {
+  max-width: 570px;
+  border-radius: 16px;
+}
+
+.news-subscribe-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .news {
   background-image: url("../images/background/news.jpg");
 }
