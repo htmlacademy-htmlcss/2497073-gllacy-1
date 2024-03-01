@@ -59,7 +59,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 80px;
   padding: 0 15px;
@@ -170,18 +170,35 @@ body {
 }
 
 .title {
+  margin: 0 auto;
+  margin-bottom: 56px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
 }
 
+.banner-title {
+  max-width: 435px;
+}
+
 .banner-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
 .banner-item {
+  display: flex;
+  max-width: 570px;
+  border-radius: 16px;
   background-color: #f79;
+}
+
+.banner-wrapper {
+  padding: 36px 0 36px 36px;
 }
 
 .banner-title-card {
