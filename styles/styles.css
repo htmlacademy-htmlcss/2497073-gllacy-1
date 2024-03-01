@@ -58,11 +58,35 @@ body {
   background-color: #feafc3;
 }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .main-container {
   flex-grow: 1;
 }
 
+.header {
+  padding: 24px 0;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 16px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list {
+  display: flex;
+  width: 542px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -70,6 +94,11 @@ body {
   text-align: center;
   text-decoration: none;
   color: #2d3440;
+}
+
+.nav-user {
+  max-width: 435px;
+  margin-left: auto;
 }
 
 .nav-phone {
