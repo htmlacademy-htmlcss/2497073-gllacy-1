@@ -257,23 +257,44 @@ body {
 }
 
 .ceo-container {
-  background-image: url(../images/background/cео.jpg);
+  padding: 24px;
+  border-radius: 16px;
+  background-image: url("../images/background/cео.jpg");
 }
 
 .ceo-box {
+  padding: 56px 40px;
+  width: 1152px;
+  border-radius: 16px;
   background-color: #fff;
 }
 
+.ceo-title {
+  max-width: 995px;
+}
+
 .ceo-list {
+  margin: 0;
+  padding: 0;
+  width: 1072px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
   list-style: none;
+}
+
+.ceo-item {
+  width: 505px;
 }
 
 .ceo-descr {
   line-height: 22px;
+
 }
 
 .news {
-  background-image: url(../images/background/news.jpg);
+  background-image: url("../images/background/news.jpg");
 }
 
 .news-link {
@@ -289,7 +310,7 @@ body {
 }
 
 .subscribe {
-  background-image: url(../images/background/subscribe.jpg);
+  background-image: url("../images/background/subscribe.jpg");
 }
 
 .subscribe-descr {
@@ -316,7 +337,7 @@ body {
 }
 
 .delivery-container {
-  background-image: url(../images/background/devilery.jpg);
+  background-image: url("../images/background/devilery.jpg");
 }
 
 .delivery-form {
@@ -333,7 +354,7 @@ body {
 }
 
 .address-container {
-  background-image: url(../images/background/address.jpg);
+  background-image: url("../images/background/address.jpg");
 }
 
 .address-box {
