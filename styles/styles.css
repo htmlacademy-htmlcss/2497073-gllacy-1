@@ -422,11 +422,26 @@ body {
   color: #565c66;
 }
 
+.footer-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .socials-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
 }
 
 .footer-menu-list {
+  margin: 0;
+  padding: 0;
+  width: 356px;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
