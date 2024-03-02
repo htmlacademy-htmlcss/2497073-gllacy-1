@@ -186,7 +186,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  column-gap: 30px;
   list-style: none;
 }
 
@@ -264,7 +264,6 @@ body {
 
 .ceo-box {
   padding: 56px 40px;
-  width: 1152px;
   border-radius: 16px;
   background-color: #fff;
 }
@@ -276,7 +275,6 @@ body {
 .ceo-list {
   margin: 0;
   padding: 0;
-  width: 1072px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -290,22 +288,22 @@ body {
 
 .ceo-descr {
   line-height: 22px;
-
 }
 
 .news-container,
 .subscribe-container {
-  max-width: 570px;
+  width: 570px;
   border-radius: 16px;
 }
 
 .news-subscribe-container {
   display: flex;
-  justify-content: space-between;
+  column-gap: 30px;
 }
 
 .news {
   background-image: url("../images/background/news.jpg");
+  background-size: cover;
 }
 
 .news-link {
@@ -321,16 +319,20 @@ body {
 }
 
 .subscribe {
+  padding: 6px;
   background-image: url("../images/background/subscribe.jpg");
+}
+
+.subscribe-box {
+  border-radius: 16px;
+  padding: 26px;
+  padding-bottom: 28px;
+  background-color: #fff;
 }
 
 .subscribe-descr {
   line-height: 22px;
   color: #565c66;
-}
-
-.subscribe-box {
-  background-color: #fff;
 }
 
 .btn-form {
