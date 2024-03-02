@@ -350,10 +350,22 @@ body {
 }
 
 .delivery-container {
+  padding: 64px;
+  padding-left: 100px;
+  display: flex;
+  border-radius: 16px;
+  background-size: cover;
   background-image: url("../images/background/devilery.jpg");
 }
 
+.delivery-text {
+  margin-right: 135px;
+}
+
 .delivery-form {
+  padding: 40px;
+  padding-bottom: 54px;
+  border-radius: 8px;
   background-color: #fcfcfc;
 }
 
