@@ -476,7 +476,17 @@ body {
 
 /* Страница каталога */
 
+.breadcrumbs-container {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
 .breadcrumbs-list {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  display: flex;
+  column-gap: 28px;
   list-style: none;
 }
 
@@ -491,6 +501,11 @@ body {
 
 .breadcrumbs-link-activ {
   border-bottom: 1px solid #2d3440;
+}
+
+.breadcrumbs-title {
+  margin: 0;
+  text-align: left;
 }
 
 .select-title {
