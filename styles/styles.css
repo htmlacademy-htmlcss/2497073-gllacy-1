@@ -379,10 +379,19 @@ body {
 }
 
 .address-container {
+  padding: 63px;
+  padding-right: 763px;
+  border-radius: 16px;
+  background-size: cover;
   background-image: url("../images/background/address.jpg");
 }
 
 .address-box {
+  padding: 40px;
+  padding-bottom: 54px;
+  width: 343px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
   background: #fcfcfc;
 }
 
