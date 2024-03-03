@@ -163,6 +163,7 @@ body {
 
 .btn-link {
   font-weight: 700;
+  margin-top: auto;
   text-align: center;
   text-decoration: none;
   color: #2d3440;
@@ -211,6 +212,9 @@ body {
 
 .banner-wrapper {
   padding: 36px 0 36px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .banner-title-card {
