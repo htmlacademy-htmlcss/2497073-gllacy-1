@@ -247,13 +247,21 @@ body {
   background-color: #fcfcfc;
 }
 
-.products-wrapper {
-  padding: 0 40px 24px 40px;
-}
-
 .products-link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #2d3440;
+}
+
+.products-img {
+  order: -1;
+}
+
+.products-wrapper {
+  padding: 0 40px 24px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-title-card {
@@ -264,6 +272,10 @@ body {
 
 .products-descr {
   line-height: 22px;
+}
+
+.price-btn-wrapper {
+  margin-top: auto;
 }
 
 .products-price {
@@ -323,6 +335,8 @@ body {
 }
 
 .news-link {
+  display: block;
+  height: 100%;
   text-decoration: none;
   color: #565c66;
 }
