@@ -512,6 +512,7 @@ body {
   padding-right: 763px;
   border-radius: 16px;
   background-size: cover;
+  background-position: center;
   background-image: url("../images/background/address.jpg");
 }
 
@@ -525,12 +526,16 @@ body {
 }
 
 .address-title {
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: 400;
   line-height: 22px;
   color: #565c66;
 }
 
 .address-text {
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -547,6 +552,8 @@ body {
 }
 
 .address-subtext {
+  display: block;
+  margin-bottom: 30px;
   font-size: 14px;
   color: #565c66;
 }
