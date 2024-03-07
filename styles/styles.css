@@ -302,6 +302,8 @@ body {
 
 .products-item {
   max-width: 270px;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   background-color: #fcfcfc;
 }
@@ -321,6 +323,7 @@ body {
   padding: 0 40px 24px 40px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .products-title-card {
