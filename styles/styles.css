@@ -470,18 +470,32 @@ body {
   display: flex;
   border-radius: 16px;
   background-size: cover;
+  background-position: center;
   background-image: url("../images/background/devilery.jpg");
 }
 
 .delivery-text {
-  margin-right: 135px;
+  margin: 103px 135px 100px 0;
+  width: 371px;
+}
+
+.delivery-title {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.delivery-descr {
+  margin: 0;
 }
 
 .delivery-form {
   padding: 40px;
   padding-bottom: 54px;
+  width: 500px;
   border-radius: 8px;
   background-color: #fcfcfc;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .delivery-descr {
