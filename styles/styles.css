@@ -38,6 +38,17 @@ img {
   object-fit: contain;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn-reset {
   border: none;
   padding: 0;
@@ -71,13 +82,8 @@ body {
   margin-bottom: 0;
 }
 
-.header {
+.header-container {
   padding: 24px 0;
-}
-
-.header-logo {
-  display: block;
-  margin-right: 16px;
 }
 
 .nav {
@@ -85,8 +91,14 @@ body {
   align-items: center;
 }
 
+.header-logo {
+  display: block;
+  margin-right: 16px;
+}
+
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   width: 542px;
   margin: 0;
   padding: 0;
@@ -94,26 +106,28 @@ body {
 }
 
 .nav-link {
+  display: block;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   color: #2d3440;
 }
 
 .nav-user {
-  max-width: 435px;
+  width: 430px;
   margin-left: auto;
+  gap: 16px;
 }
 
 .nav-phone {
+  padding: 6px 0;
   font-weight: 700;
 }
 
 .nav-user-link {
-  min-width: 88px;
-  min-height: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  min-width: 16px;
+  min-height: 16px;
+  display: flex;
 
   padding: 6px 16px;
   font-size: 14px;
@@ -121,8 +135,21 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.nav-link-search {
+  padding: 8px;
+}
+
+.nav-search {
+  width: 16px;
+  height: 16px;
+}
+
 .main-container {
   flex-grow: 1;
+}
+
+.slider {
+  display: flex;
 }
 
 .slider-1,
@@ -139,15 +166,43 @@ body {
   background: #fcc850;
 }
 
+.slider-descr {
+  max-width: 470px;
+  margin: 136px 0 138px 70px;
+}
+
 .slider-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
 .slider-features {
+  margin: 0;
+  margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-img {
+  display: flex;
+}
+
+.slider-img-hero-box {
+  height: 554px;
+  padding: 21px 0 26px;
+}
+
+.slider-img-next {
+  margin: auto 0;
+  padding: 0 17px;
+}
+
+.slider-img-next-two {
+  margin: auto 41px auto 37px;
 }
 
 .slider-pagination {
@@ -156,6 +211,7 @@ body {
 }
 
 .slider-pagination-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -218,12 +274,15 @@ body {
 }
 
 .banner-title-card {
+  margin: 0;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
 .banner-descr {
+  margin: 0;
   line-height: 22px;
 }
 
@@ -243,6 +302,8 @@ body {
 
 .products-item {
   max-width: 270px;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   background-color: #fcfcfc;
 }
@@ -262,6 +323,7 @@ body {
   padding: 0 40px 24px 40px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .products-title-card {
@@ -306,15 +368,17 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 32px;
   row-gap: 40px;
   list-style: none;
 }
 
 .ceo-item {
-  width: 505px;
+  width: 506px;
 }
 
 .ceo-descr {
+  margin: 0;
   line-height: 22px;
 }
 
@@ -326,22 +390,32 @@ body {
 
 .news-subscribe-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .news {
   background-image: url("../images/background/news.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .news-link {
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
   height: 100%;
+  padding: 32px 235px 68px 32px;
   text-decoration: none;
   color: #565c66;
 }
 
+.news-slogan {
+  display: block;
+  margin-bottom: 12px;
+}
+
 .news-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -349,8 +423,11 @@ body {
 }
 
 .subscribe {
+  display: flex;
   padding: 6px;
   background-image: url("../images/background/subscribe.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .subscribe-box {
@@ -361,6 +438,9 @@ body {
 }
 
 .subscribe-descr {
+  margin: 0;
+  margin-bottom: 42px;
+  width: 506px;
   line-height: 22px;
   color: #565c66;
 }
@@ -390,18 +470,32 @@ body {
   display: flex;
   border-radius: 16px;
   background-size: cover;
+  background-position: center;
   background-image: url("../images/background/devilery.jpg");
 }
 
 .delivery-text {
-  margin-right: 135px;
+  margin: 103px 135px 100px 0;
+  width: 371px;
+}
+
+.delivery-title {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.delivery-descr {
+  margin: 0;
 }
 
 .delivery-form {
   padding: 40px;
   padding-bottom: 54px;
+  width: 500px;
   border-radius: 8px;
   background-color: #fcfcfc;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .delivery-descr {
@@ -418,6 +512,7 @@ body {
   padding-right: 763px;
   border-radius: 16px;
   background-size: cover;
+  background-position: center;
   background-image: url("../images/background/address.jpg");
 }
 
@@ -431,12 +526,16 @@ body {
 }
 
 .address-title {
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: 400;
   line-height: 22px;
   color: #565c66;
 }
 
 .address-text {
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -453,15 +552,17 @@ body {
 }
 
 .address-subtext {
+  display: block;
+  margin-bottom: 30px;
   font-size: 14px;
   color: #565c66;
 }
 
 .footer-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
   display: flex;
   justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .footer-line {
@@ -469,18 +570,27 @@ body {
 }
 
 .socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   margin: 0;
   padding: 0;
-  display: flex;
+  max-width: 104px;
   list-style: none;
 }
 
+.social-item {
+  width: 24px;
+  height: 24px;
+}
+
 .footer-menu-list {
-  margin: 0;
-  padding: 0;
-  width: 356px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 8px;
+  margin: 0;
+  padding: 0;
+  max-width: 356px;
   list-style: none;
 }
 
@@ -497,7 +607,17 @@ body {
   font-weight: 700;
 }
 
+.footer-copyright {
+  width: 193px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 14px;
+}
+
 .footer-copyright-text {
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
 }
@@ -516,16 +636,20 @@ body {
 /* Страница каталога */
 
 .breadcrumbs-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 32px;
   margin-bottom: 40px;
 }
 
 .breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  order: -1;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
-  display: flex;
-  gap: 28px;
   list-style: none;
 }
 
@@ -622,7 +746,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #2d3440;
   border-radius: 26px;
   border: 4px solid rgba(252, 252, 252, 0.4);
