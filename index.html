@@ -422,30 +422,36 @@
               в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ
               в&nbsp;течение часа!</p>
           </div>
-            <div class="delivery-form">
+            <div class="delivery-form-box">
               <p class="delivery-descr delivery-descr-form">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся
                 с&nbsp;вами,
                 чтобы подтвердить заказ.</p>
-              <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <label class="delivery-label">
-                  Дата
-                  <button class="info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                  <input type="text" name="date" placeholder="01.04.2020">
-                </label>
-                <label class="delivery-label">
-                  Телефон
-                  <input type="tel" name="phone" placeholder="+7 800 999-00-00">
-                </label>
-                <label class="delivery-label">
-                  Адрес
-                  <button class="info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                  <input type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
-                </label>
-                <button class="btn-reset btn-form" type="submit">Отправить</button>
+              <form class="delivery-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <div class="delivery-form-wrapper delivery-form-date">
+                  <label class="delivery-label" for="label-date">
+                    Дата
+                    <button class="btn-reset info-btn">
+                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                    </button>
+                  </label>
+                  <input type="text" name="date" id="label-date" placeholder="01.04.2020">
+                </div>
+                <div class="delivery-form-wrapper delivery-form-phone">
+                  <label class="delivery-label" for="label-phone">
+                    Телефон
+                  </label>
+                  <input type="tel" name="phone" id="label-phone" placeholder="+7 800 999-00-00">
+                </div>
+                <div class="delivery-form-wrapper delivery-form-address">
+                  <label class="delivery-label" for="label-address">
+                    Адрес
+                    <button class="btn-reset info-btn">
+                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                    </button>
+                  </label>
+                  <input type="text" name="address" id="label-address" placeholder="ул. Большая Конюшенная, 19/8">
+                </div>
+                <button class="btn-reset btn-form delivery-form-btn" type="submit">Отправить</button>
               </form>
             </div>
         </div>

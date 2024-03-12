@@ -505,9 +505,11 @@ body {
 
 .delivery-descr {
   margin: 0;
+  line-height: 22px;
+  color: #565c66;
 }
 
-.delivery-form {
+.delivery-form-box {
   padding: 40px;
   padding-bottom: 54px;
   width: 500px;
@@ -516,9 +518,30 @@ body {
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
-.delivery-descr {
-  line-height: 22px;
-  color: #565c66;
+.delivery-descr-form {
+  margin-bottom: 32px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-form-btn {
+  grid-column: 1 / -1;
+  width: min-content;
+  justify-self: center;
+  margin-top: 12px;
 }
 
 .delivery-label {
