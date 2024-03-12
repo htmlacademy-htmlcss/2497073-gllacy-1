@@ -626,9 +626,9 @@ body {
 }
 
 .footer-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 8px;
+  display: grid;
+  grid-template-columns: 126px 182px;
+  gap: 8px 24px;
   margin: 0;
   padding: 0;
   max-width: 356px;
