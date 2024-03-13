@@ -293,10 +293,9 @@ body {
 .products-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
   list-style: none;
 }
 
@@ -311,6 +310,7 @@ body {
 .products-link {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: #2d3440;
 }
@@ -327,23 +327,41 @@ body {
 }
 
 .products-title-card {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .products-descr {
+  margin: 0;
+  margin-bottom: 16px;
   line-height: 22px;
 }
 
 .price-btn-wrapper {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .products-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.products-button {
+  border-radius: 26px;
+  padding: 8px 8px;
+
+  background-color: #ff2f64;
+}
+
+.products-button-svg {
+  display: block;
 }
 
 .ceo-container {
@@ -487,9 +505,11 @@ body {
 
 .delivery-descr {
   margin: 0;
+  line-height: 22px;
+  color: #565c66;
 }
 
-.delivery-form {
+.delivery-form-box {
   padding: 40px;
   padding-bottom: 54px;
   width: 500px;
@@ -498,9 +518,30 @@ body {
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
-.delivery-descr {
-  line-height: 22px;
-  color: #565c66;
+.delivery-descr-form {
+  margin-bottom: 32px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-form-btn {
+  grid-column: 1 / -1;
+  width: min-content;
+  justify-self: center;
+  margin-top: 12px;
 }
 
 .delivery-label {
@@ -585,9 +626,9 @@ body {
 }
 
 .footer-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 8px;
+  display: grid;
+  grid-template-columns: 126px 182px;
+  gap: 8px 24px;
   margin: 0;
   padding: 0;
   max-width: 356px;
