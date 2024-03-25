@@ -460,6 +460,7 @@ body {
 
 .products-title {
   max-width: 527px;
+  margin-bottom: 110px;
 }
 
 .products-list {
@@ -472,14 +473,16 @@ body {
 }
 
 .products-item {
+  position: relative;
   max-width: 270px;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  background-color: #fcfcfc;
+
 }
 
 .products-link {
+  position: absolute;
+  top: -80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,12 +491,18 @@ body {
 }
 
 .products-img {
-  order: -1;
+
   border-radius: 100%;
+
+  order: -1;
+
+  display: block;
 }
 
 .products-wrapper {
-  padding: 0 40px 24px 40px;
+  padding: 133px 40px 24px 40px;
+  border-radius: 8px;
+  background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -511,6 +520,7 @@ body {
   margin: 0;
   margin-bottom: 16px;
   line-height: 22px;
+  text-align: center;
 }
 
 .price-btn-wrapper {
@@ -527,14 +537,41 @@ body {
 }
 
 .products-button {
-  border-radius: 26px;
-  padding: 8px 8px;
-
+  position: relative;
+  display: block;
+  padding: 8px 11px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
   background-color: #ff2f64;
 }
 
 .products-button-svg {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #fcfcfc;
+
+}
+
+.products-button-svg:hover {
+  border: 2px solid #ff2f64;
+  background: rgba(252, 252, 252, 0.3);
+  fill: #2d3440;
+}
+
+.products-button-svg:focus-visible {
+  border: 2px solid #2d3440;
+  background: #ff2f64;
+}
+
+.products-button:active {
+  border: 2px solid #ff2f64;
+  background: #ffcbd8;
+  fill: #2d3440;
 }
 
 .ceo-container {
@@ -565,12 +602,40 @@ body {
 }
 
 .ceo-item {
+  position: relative;
   width: 506px;
+  padding-left: 64px;
 }
 
 .ceo-descr {
   margin: 0;
   line-height: 22px;
+}
+
+.ceo-svg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 16px;
+  bottom: 18px;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.ceo-svg-icecream::before {
+  background-image: url("../images/icons/ice-cream.svg");
+}
+
+.ceo-svg-cow::before {
+  background-image: url("../images/icons/cow.svg");
+}
+
+.ceo-svg-leaf::before {
+  background-image: url("../images/icons/leaf.svg");
+}
+
+.ceo-svg-thermometer::before {
+  background-image: url("../images/icons/thermometer.svg");
 }
 
 .news-container,
