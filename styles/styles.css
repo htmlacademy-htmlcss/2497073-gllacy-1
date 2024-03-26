@@ -997,8 +997,26 @@ body {
   list-style: none;
 }
 
+.breadcrumbs-item {
+  list-style-type: none;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  right: -20px;
+  background-image: url("../images/arrow/chevrons-right.svg");
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 .breadcrumbs-link {
-  padding: 1px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
