@@ -1077,7 +1077,7 @@ body {
   background: rgba(252, 252, 252, 0.3);
 }
 
-.btn {
+.btn-filter {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1110,10 +1110,33 @@ body {
   line-height: 20px;
   color: #2d3440;
   border-radius: 26px;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   background: #fcfcfc;
   background-clip: padding-box;
+}
+
+.btn-show:hover {
+  outline: 4px solid #fcfcfc;
+  box-shadow: 0 4px 15px 0 rgba(133, 133, 133, 0.15);
+  background: rgba(252, 252, 252, 0.4);
+}
+
+.btn-show:focus-visible {
+  outline: 2px solid #2d3440;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.btn-show:active {
+  outline: 2px solid #2d3440;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  background: #fcfcfc;
+}
+
+.btn-show:disabled {
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  background: #e7e7e7;
 }
 
 .pagination-wrapper {
@@ -1131,19 +1154,70 @@ body {
 .pagination-link {
   padding: 2px 8px;
   color: #2d3440;
+  border-radius: 50px;
   text-decoration: none;
 }
 
+.pagination-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-link:focus-visible {
+  outline: 1px solid #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.pagination-link:active {
+  outline: 1px solid #fcfcfc;
+  background: rgba(252, 252, 252, 0.5);
+}
+
 .pagination-link-activ {
-  padding: 2px 8px;
-  border-radius: 50px;
   background-color: #fcfcfc;
 }
 
 .pagination-left {
-  padding: 4px 8px 4px 0;
+  display: block;
+  padding: 3px 6px 3px 4px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.pagination-arrow-disabled {
+  fill: #2d3440;
+  opacity: 0.3;
+}
+
+.pagination-left:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-left:focus-visible {
+  outline: 1px solid #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.pagination-left:active {
+  outline: 1px solid #fcfcfc;
+  background: rgba(252, 252, 252, 0.5);
 }
 
 .pagination-right {
-  padding: 4px 0 4px 8px;
+  padding: 3px 4px 3px 6px;
+  border-radius: 50px;
+}
+
+.pagination-right:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-right:focus-visible {
+  outline: 1px solid #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.pagination-right:active {
+  outline: 1px solid #fcfcfc;
+  background: rgba(252, 252, 252, 0.5);
+  fill: #2d3440;
 }
