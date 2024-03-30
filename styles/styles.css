@@ -200,16 +200,19 @@ body {
 .slider-1,
 .slider-2,
 .slider-3 {
-  width: 500px;
+  width: 100%;
   display: flex;
+  flex-shrink: 0;
 }
 
 .slider-2 {
   background-color: #69a9ff;
+  z-index: 1;
 }
 
 .slider-3 {
   background: #fcc850;
+  z-index: 1;
 }
 
 .slider-descr {
@@ -235,10 +238,17 @@ body {
 
 .slider-img {
   display: flex;
+  position: relative;
 }
 
-.slider-prev,
-.slider-next {
+.slider-img-hero-box {
+  position: relative;
+  height: 554px;
+  padding: 21px 0 26px;
+}
+
+.slider-prev svg,
+.slider-next svg {
   position: absolute;
   top: 255px;
   border: 2px solid #fcfcfc;
@@ -250,44 +260,38 @@ body {
   fill: #fcfcfc;
 }
 
-.slider-prev {
-  left: -12px;
+.slider-prev svg {
+  left: -13px;
 }
 
-.slider-next {
+.slider-next svg {
   right: -3px;
 }
 
-.slider-prev:hover,
-.slider-next:hover {
+.slider-prev:hover svg,
+.slider-next:hover svg {
   fill: #2d3440;
   background: #fcfcfc;
 }
 
-.slider-prev:focus-visible,
-.slider-next:focus-visible {
+.slider-prev:focus-visible svg,
+.slider-next:focus-visible svg {
   border: 2px solid #2d3440;
   fill: #2d3440;
   background: rgba(252, 252, 252, 0.3);
-  outline: none;
 }
 
-.slider-prev:active,
-.slider-next:active {
+.slider-prev:active svg,
+.slider-next:active svg {
   fill: #2d3440;
   background: rgba(252, 252, 252, 0.5);
+  border: 2px solid transparent;
 }
 
 .slider-prev:disabled,
 .slider-next:disabled {
   background: rgba(252, 252, 252, 0.3);
   opacity: 0.4;
-}
-
-.slider-img-hero-box {
-  position: relative;
-  height: 554px;
-  padding: 21px 0 26px;
 }
 
 .circle-hero {
@@ -304,8 +308,8 @@ body {
 .circle-next-one,
 .circle-next-two {
   position: absolute;
-  top: 340px;
-  right: 200px;
+  top: 225px;
+  right: 140px;
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -314,7 +318,7 @@ body {
 }
 
 .circle-next-two {
-  right: 60px;
+  right: 0;
 }
 
 .slider-img-next {
@@ -472,7 +476,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 40px 30px;
+  gap: 91px 30px;
   list-style: none;
 }
 
@@ -486,7 +490,8 @@ body {
 
 .products-link {
   position: absolute;
-  top: -80px;
+  top: -50px;
+  left: 51px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,16 +500,15 @@ body {
 }
 
 .products-img {
-
-  border-radius: 100%;
-
-  order: -1;
-
   display: block;
+  margin-bottom: 16px;
+  order: -1;
+  border-radius: 100%;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
 }
 
 .products-wrapper {
-  padding: 133px 40px 24px 40px;
+  padding: 165px 40px 24px 40px;
   border-radius: 8px;
   background-color: #fcfcfc;
   display: flex;
@@ -540,39 +544,30 @@ body {
   line-height: 24px;
 }
 
-.products-button {
-  position: relative;
+.products-button svg {
   display: block;
   padding: 8px 11px;
-  border-radius: 50%;
+  border-radius: 100%;
   width: 32px;
   height: 32px;
   background-color: #ff2f64;
-}
-
-.products-button-svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #fcfcfc;
 }
 
-.products-button:hover .products-button-svg {
-  border: 2px solid #ff2f64;
+.products-button:hover svg {
+  outline: 2px solid #ff2f64;
   background: rgba(252, 252, 252, 0.3);
   fill: #2d3440;
 }
 
-.products-button:focus-visible .products-button-svg {
-  border: 2px solid #2d3440;
+.products-button:focus-visible {
+  outline: -2px solid #2d3440;
+  border-radius: 100%;
   background: #ff2f64;
 }
 
-.products-button:active .products-button-svg {
-  border: 2px solid #ff2f64;
+.products-button:active svg {
+  outline: 2px solid #ff2f64;
   background: #ffcbd8;
   fill: #2d3440;
 }
@@ -886,30 +881,29 @@ body {
   list-style: none;
 }
 
-.social-link {
+.social-link svg {
   display: block;
   width: 28px;
   height: 28px;
-}
-
-.social-icon {
-  border-radius: 50%;
+  border-radius: 100%;
+  outline: 0;
   border: 2px solid rgba(252, 252, 252, 0.3);
-  color: #FCFCFC;
 }
 
-.social-link:hover .social-icon {
-  fill: #2d3440;
-}
-
-.social-link:focus-visible .social-icon {
-  border: 2px solid #2d3440;
-  fill: #2d3440;
-  outline: none;
-}
-
-.social-link:active .social-icon {
+.social-link:hover svg {
   border: 2px solid rgba(252, 252, 252, 0.5);
+  border-radius: 100%;
+  fill: #2d3440;
+}
+
+.social-link:focus-visible svg {
+  border-radius: 100%;
+  outline: 2px solid #2d3440;
+  fill: #2d3440;
+}
+
+.social-link:active svg {
+  outline: 2px solid rgba(252, 252, 252, 0.5);
   opacity: 0.5;
   border-radius: 100%;
   fill: #2d3440;
@@ -1034,7 +1028,7 @@ body {
 }
 
 .select-form-wrapper {
-  margin-bottom: 44px;
+  margin-bottom: 95px;
   display: flex;
   flex-wrap: wrap;
 }
