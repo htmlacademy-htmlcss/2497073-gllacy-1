@@ -1149,6 +1149,84 @@ body {
 
 }
 
+.range-wrapper-inputs {
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.range-input {
+  margin-right: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range {
+  padding: 17px 16px;
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.range-scale {
+  position: relative;
+  width: 164px;
+  height: 2px;
+  background-color: rgba(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #565c66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 6px solid #2d3440;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  border: 6px solid #fcfcfc;
+  background-color: #2d3440;
+}
+
+.range-toggle:focus-visible {
+  border: 6px solid #fcfcfc;
+  background-color: #2d3440;
+  outline: 2px solid #2d3440;
+}
+
+.range-toggle:active {
+  border: 8px solid #2d3440;
+  background-color: #2d3440;
+}
+
+.toggle-min {
+  top: -7px;
+  left: -16px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: -16px;
+}
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1265,8 +1343,6 @@ body {
   border: 2px solid #fcfcfc;
   opacity: 0.4;
 }
-
-
 
 .pagination-container {
   margin-top: 16px;
