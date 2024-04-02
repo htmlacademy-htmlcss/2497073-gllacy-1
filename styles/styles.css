@@ -1229,19 +1229,44 @@ body {
 }
 
 .btn-filter {
+  display: inline-grid;
+  place-items: center;
+  align-self: end;
+  min-width: 185px;
+  min-height: 36px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
-
   padding: 8px 32px;
-  width: 185px;
-  height: 36px;
   border: 2px solid #fcfcfc;
   border-radius: 20px;
   background: rgba(252, 252, 252, 0.3);
 }
+
+.btn-filter:hover {
+  background: #fcfcfc;
+}
+
+.btn-filter:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2d3440;
+  outline: none;
+}
+
+.btn-filter:active {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid transparent;
+}
+
+.btn-filter:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  opacity: 0.4;
+}
+
+
 
 .pagination-container {
   margin-top: 16px;
@@ -1252,6 +1277,10 @@ body {
 }
 
 .btn-show {
+  min-width: 180px;
+  min-height: 44px;
+  display: inline-grid;
+  place-items: center;
   margin: 41px;
   margin-right: 335px;
   padding: 12px 32px;
