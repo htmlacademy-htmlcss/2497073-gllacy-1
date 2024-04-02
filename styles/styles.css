@@ -1185,6 +1185,9 @@ body {
   width: 16px;
   height: 16px;
   border: 1px solid #2d3440;
+}
+
+.control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 
@@ -1209,6 +1212,20 @@ body {
 
 .control-input[type="radio"]:checked:hover + .control-mark::before {
   background-color: #fcfcfc;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/check-on.svg");
+  border: none;
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark {
+  background-image: url("../images/check-on-hover.svg");
+  border: none;
 }
 
 .btn-filter {
