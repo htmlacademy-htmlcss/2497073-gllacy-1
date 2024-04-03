@@ -1504,6 +1504,131 @@ body {
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
+.popover-open {
+  display: block;
+}
+
 .popover-content {
   height: 100%;
+}
+
+.popover-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 30px;
+}
+
+.cart-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cart-item {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 46px 1fr 1fr 16px;
+  gap: 16px;
+}
+
+.cart-item:last-child {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.cart-img-wrapper {
+  width: 46px;
+  height: 46px;
+  align-self: center;
+}
+
+.cart-item-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cart-item-title,
+.cart-item-price {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+}
+
+.cart-item-title {
+  margin-bottom: 4px;
+}
+
+.catalog-filter-subtitle {
+  font-size: 14px;
+  color: #b9b9b9;
+}
+
+.cart-item-price {
+  align-self: center;
+}
+
+.btn-cart-close {
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popover-order-wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popover-link {
+  display: inline-grid;
+  place-items: center;
+  min-width: 140px;
+  min-height: 44px;
+  font-weight: 700;
+  border-radius: 26px;
+  padding: 12px 32px;
+  color: #fcfcfc;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  background: #ff2f64;
+  background-clip: padding-box;
+  text-decoration: none;
+}
+
+.popover-link:hover {
+  color: #2d3440;
+  outline: 4px solid #ff2f64;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.popover-link:focus-visible {
+  outline: 2px solid #2d3440;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  background: #ff2f64;
+}
+
+.popover-link:active {
+  color: #fcfcfc;
+  outline: 2px solid #2d3440;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  background: #feafc3;
+}
+
+.popover-link:disabled {
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  color: #565c66;
+  background: #b9b9b9;
+}
+
+.popover-total-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
 }
