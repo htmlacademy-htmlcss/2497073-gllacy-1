@@ -70,6 +70,7 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -247,42 +248,44 @@ body {
   padding: 21px 0 26px;
 }
 
-.slider-prev svg,
-.slider-next svg {
+.slider-prev,
+.slider-next {
   position: absolute;
-  top: 255px;
+  top: 50%;
+  transform: translateY(-50%);
   border: 2px solid #fcfcfc;
   border-radius: 26px;
   padding: 11px;
   width: 38px;
   height: 38px;
   background: rgba(252, 252, 252, 0.3);
-  fill: #fcfcfc;
+  color: #fcfcfc;
 }
 
-.slider-prev svg {
-  left: -13px;
+.slider-prev {
+  left: -12px;
 }
 
-.slider-next svg {
-  right: -3px;
+.slider-next {
+  right: -12px;
 }
 
-.slider-prev:hover svg,
-.slider-next:hover svg {
-  fill: #2d3440;
+.slider-prev:hover,
+.slider-next:hover {
+  color: #2d3440;
   background: #fcfcfc;
 }
 
-.slider-prev:focus-visible svg,
-.slider-next:focus-visible svg {
+.slider-prev:focus-visible,
+.slider-next:focus-visible {
   border: 2px solid #2d3440;
-  fill: #2d3440;
+  color: #2d3440;
   background: rgba(252, 252, 252, 0.3);
+  outline: none;
 }
 
-.slider-prev:active svg,
-.slider-next:active svg {
+.slider-prev:active,
+.slider-next:active {
   fill: #2d3440;
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid transparent;
@@ -303,6 +306,10 @@ body {
   top: 115px;
   left: 7px;
   z-index: -1;
+}
+
+.slider-img-hero {
+  height: 100%;
 }
 
 .circle-next-one,
@@ -344,7 +351,7 @@ body {
 }
 
 .slider-pagination-button {
-  border-radius: 100px;
+  border-radius: 100%;
   width: 12px;
   height: 12px;
   background: #fcfcfc;
@@ -490,8 +497,9 @@ body {
 
 .products-link {
   position: absolute;
-  top: -50px;
-  left: 51px;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -499,10 +507,15 @@ body {
   color: #2d3440;
 }
 
-.products-img {
-  display: block;
+.products-img-wrapper {
   margin-bottom: 16px;
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
   order: -1;
+}
+
+.products-img {
   border-radius: 100%;
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
 }
@@ -544,32 +557,35 @@ body {
   line-height: 24px;
 }
 
-.products-button svg {
-  display: block;
-  padding: 8px 11px;
-  border-radius: 100%;
+.products-button {
+  display: grid;
+  place-items: center;
   width: 32px;
   height: 32px;
+  border-radius: 50%;
   background-color: #ff2f64;
-  fill: #fcfcfc;
+  color: #fcfcfc;
 }
 
-.products-button:hover svg {
-  outline: 2px solid #ff2f64;
+.products-button:hover {
+  border: 2px solid #ff2f64;
   background: rgba(252, 252, 252, 0.3);
-  fill: #2d3440;
+  color: #2d3440;
 }
 
 .products-button:focus-visible {
-  outline: -2px solid #2d3440;
-  border-radius: 100%;
-  background: #ff2f64;
+  border: 2px solid #2d3440;
+  outline: none;
 }
 
-.products-button:active svg {
-  outline: 2px solid #ff2f64;
+.products-button:active {
+  border: 2px solid #ff2f64;
   background: #ffcbd8;
-  fill: #2d3440;
+  color: #2d3440;
+}
+
+.products-button:disabled {
+  background: #b9b9b9;
 }
 
 .ceo-container {
@@ -881,32 +897,33 @@ body {
   list-style: none;
 }
 
-.social-link svg {
-  display: block;
+.social-link {
+  display: grid;
+  place-items: center;
   width: 28px;
   height: 28px;
-  border-radius: 100%;
-  outline: 0;
+  border-radius: 50%;
   border: 2px solid rgba(252, 252, 252, 0.3);
+  color: #fcfcfc;
 }
 
-.social-link:hover svg {
+.social-link:hover {
   border: 2px solid rgba(252, 252, 252, 0.5);
-  border-radius: 100%;
-  fill: #2d3440;
+  background-color: #2d3440;
+  background-clip: padding-box;
 }
 
-.social-link:focus-visible svg {
-  border-radius: 100%;
-  outline: 2px solid #2d3440;
-  fill: #2d3440;
+.social-link:focus-visible {
+  outline: none;
+  border: 2px solid #2d3440;
+  background-color: #2d3440;
 }
 
-.social-link:active svg {
-  outline: 2px solid rgba(252, 252, 252, 0.5);
+.social-link:active {
+  border: 2px solid rgba(252, 252, 252, 0.5);
+  background-color: #2d3440;
+  background-clip: padding-box;
   opacity: 0.5;
-  border-radius: 100%;
-  fill: #2d3440;
 }
 
 .footer-menu-list {
