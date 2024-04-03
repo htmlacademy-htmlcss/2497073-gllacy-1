@@ -38,12 +38,12 @@
             </li>
             <li class="nav-user-item">
               <a class="nav-user-link nav-link-search nav-link" href="#">
-                <span class="visually-hidden">Поиск</span>
                 <svg class="nav-search" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.66329 6.18794C1.66329 3.61061 3.75263 1.52128 6.32996 1.52128C8.90729 1.52128 10.9966 3.61061 10.9966 6.18794C10.9966 7.44522 10.4994 8.58636 9.69093 9.42549C9.66808 9.44305 9.64612 9.46229 9.62519 9.48321C9.60427 9.50413 9.58503 9.5261 9.56748 9.54894C8.72835 10.3574 7.58722 10.8546 6.32996 10.8546C3.75263 10.8546 1.66329 8.76527 1.66329 6.18794ZM10.0751 10.8759C9.04862 11.697 7.74662 12.1879 6.32996 12.1879C3.01625 12.1879 0.329956 9.50165 0.329956 6.18794C0.329956 2.87423 3.01625 0.187943 6.32996 0.187943C9.64367 0.187943 12.33 2.87423 12.33 6.18794C12.33 7.60463 11.839 8.90663 11.0179 9.93308L13.468 12.3832C13.7284 12.6436 13.7284 13.0657 13.468 13.326C13.2077 13.5864 12.7855 13.5864 12.5252 13.326L10.0751 10.8759Z" />
                 </svg>
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="nav-user-item">
@@ -65,6 +65,11 @@
                 </svg>
                 2 товара
               </a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -274,12 +279,14 @@
             <ul class="products-list">
               <li class="products-item">
                 <a class="products-link" href="#">
-                  <h3 class="products-title-card">Малинка</h3>
                   <div class="products-img-wrapper">
                     <img class="products-img" src="images/catalog/malinka.png" width="168" height="168" alt="">
                   </div>
                 </a>
                 <div class="products-wrapper">
+                  <a class="products-link" href="#">
+                    <h3 class="products-title-card">Малинка</h3>
+                  </a>
                   <p class="products-descr">Сливочное мороженое с&nbsp;малиновым джемом</p>
                   <div class="price-btn-wrapper">
                     <b class="products-price">310 ₽/кг</b>
@@ -297,12 +304,14 @@
               </li>
               <li class="products-item">
                 <a class="products-link" href="#">
-                  <h3 class="products-title-card">Фисташка</h3>
                   <div class="products-img-wrapper">
                     <img class="products-img" src="images/catalog/pistachio.png" width="168" height="168" alt="">
                   </div>
                 </a>
                 <div class="products-wrapper">
+                  <a href="" class="products-link">
+                    <h3 class="products-title-card">Фисташка</h3>
+                  </a>
                   <p class="products-descr">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
                   <div class="price-btn-wrapper">
                     <b class="products-price">340 ₽/кг</b>
@@ -319,12 +328,14 @@
               </li>
               <li class="products-item">
                 <a class="products-link" href="#">
-                  <h3 class="products-title-card">Черника</h3>
                   <div class="products-img-wrapper">
                     <img class="products-img" src="images/catalog/blueberries.png" width="168" height="168" alt="">
                   </div>
                 </a>
                 <div class="products-wrapper">
+                  <a href="" class="products-link">
+                    <h3 class="products-title-card">Черника</h3>
+                  </a>
                   <p class="products-descr">Крем-брюле с&nbsp;черничным джемом</p>
                   <div class="price-btn-wrapper">
                     <b class="products-price">330 ₽/кг</b>
@@ -341,12 +352,14 @@
               </li>
               <li class="products-item">
                 <a class="products-link" href="#">
-                  <h3 class="products-title-card">Бабл-гам</h3>
                   <div class="products-img-wrapper">
                     <img class="products-img" src="images/catalog/bubble-gum.png" width="168" height="168" alt="">
                   </div>
                 </a>
                 <div class="products-wrapper">
+                  <a href="" class="products-link">
+                    <h3 class="products-title-card">Бабл-гам</h3>
+                  </a>
                   <p class="products-descr">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
                   <div class="price-btn-wrapper">
                     <b class="products-price">310 ₽/кг</b>
@@ -410,8 +423,9 @@
                 всего
                 самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной
                 ерунды. Честно =)</p>
-              <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <input type="email" name="email" placeholder="email@example.com" required>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <input class="input-form input-email" type="email" name="email" placeholder="email@example.com"
+                  required>
                 <button class="btn-reset btn-form" type="submit">Отправить</button>
               </form>
             </div>
@@ -438,13 +452,13 @@
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                 </label>
-                <input type="text" name="date" id="label-date" placeholder="01.04.2020">
+                <input class="input-form" type="text" name="date" id="label-date" placeholder="01.04.2020">
               </div>
               <div class="delivery-form-wrapper delivery-form-phone">
                 <label class="delivery-label" for="label-phone">
                   Телефон
                 </label>
-                <input type="tel" name="phone" id="label-phone" placeholder="+7 800 999-00-00">
+                <input class="input-form" type="tel" name="phone" id="label-phone" placeholder="+7 800 999-00-00">
               </div>
               <div class="delivery-form-wrapper delivery-form-address">
                 <label class="delivery-label" for="label-address">
@@ -453,7 +467,8 @@
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                 </label>
-                <input type="text" name="address" id="label-address" placeholder="ул. Большая Конюшенная, 19/8">
+                <input class="input-form" type="text" name="address" id="label-address"
+                  placeholder="ул. Большая Конюшенная, 19/8">
               </div>
               <button class="btn-reset btn-form delivery-form-btn" type="submit">Отправить</button>
             </form>
