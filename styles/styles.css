@@ -771,7 +771,7 @@ body {
 }
 
 .btn-form {
-  min-width: 139px;
+  min-width: 114px;
   min-height: 44px;
   display: inline-grid;
   place-items: center;
@@ -1489,10 +1489,6 @@ body {
   position: relative;
 }
 
-.popover-open {
-  display: block;
-}
-
 .popover {
   position: absolute;
   top: 40px;
@@ -1509,6 +1505,105 @@ body {
   display: none;
 }
 
+/* .popover-open {
+  display: block;
+} */
+
+.popover-search {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 24px 16px;
+  width: 356px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
+  z-index: 1;
+  display: none;
+}
+
+.popover-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.search-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+.search-input::-webkit-search-cancel-button {
+  /* appearance: none; */
+  height: 10px;
+  width: 10px;
+  background-image: url("../images/cross.svg");
+  background-size: 10px 10px;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.search-input:focus-visible {
+  /* background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: right 16px center; */
+  outline: none;
+}
+
+.popover-login {
+  width: 420px;
+  padding-bottom: 52px;
+}
+
+.popover-login-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.popover-input[type="email"] {
+  margin-bottom: 16px;
+}
+
+.popover-input[type="email"]::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.popover-input[type="password"] {
+  margin-bottom: 32px;
+}
+
+.popover-btn-wrapper {
+  display: flex;
+  gap: 23px;
+}
+
+.popover-user-link {
+  display: block;
+  font-size: 14px;
+  color: #2d3440;
+  border-bottom: 1px solid #2d3440;
+  text-decoration: none;
+}
+
+.popover-user-link:first-child {
+  margin-bottom: 4px;
+}
+
+.popover-user-link:last-child {
+  display: inline;
+}
+
 .popover-content {
   height: 100%;
 }
@@ -1516,7 +1611,10 @@ body {
 .popover-title {
   margin-top: 0;
   margin-bottom: 32px;
+  padding: 0;
   line-height: 30px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .cart-list {
