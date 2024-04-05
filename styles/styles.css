@@ -1485,6 +1485,68 @@ body {
 
 /* popover */
 
+.nav-item {
+  position: relative;
+}
+
+.popover-catalog {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 1;
+  width: 138px;
+  min-height: 156px;
+  padding: 8px 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
+  background: #fcfcfc;
+  display: none;
+}
+
+.popover-catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popover-catalog-item:first-child {
+  position: relative;
+  font-weight: 700;
+}
+
+.popover-catalog-item:first-child::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  margin: 4px 16px;
+  border: 1px solid #b9b9b9;
+  width: 103px;
+  z-index: -1;
+}
+
+.popover-catalog-link {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.popover-catalog-item:hover {
+  background: #ffcbd8;
+}
+
+.popover-catalog-link:active {
+  background: #f79;
+}
+
+.popover-catalog-link:current {
+  color: #fcfcfc;
+  background: #ff4a78;
+}
+
 .nav-user-item {
   position: relative;
 }
