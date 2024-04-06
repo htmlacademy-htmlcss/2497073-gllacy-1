@@ -508,12 +508,16 @@
               чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/courses" method="post">
               <div class="delivery-form-wrapper delivery-form-date">
-                <label class="delivery-label" for="label-date">
-                  Дата
-                  <button class="btn-reset info-btn">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                </label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="label-date">
+                    Дата
+                  </label>
+                  <span class="tooltip">
+                    <button class="btn-reset btn-tooltip" type="button" aria-labelledby="tooltip-label-date">
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите дату доставки</span>
+                  </span>
+                </span>
                 <input class="input-form" type="text" name="date" id="label-date" placeholder="01.04.2020">
               </div>
               <div class="delivery-form-wrapper delivery-form-phone">
@@ -523,12 +527,18 @@
                 <input class="input-form" type="tel" name="phone" id="label-phone" placeholder="+7 800 999-00-00">
               </div>
               <div class="delivery-form-wrapper delivery-form-address">
-                <label class="delivery-label" for="label-address">
-                  Адрес
-                  <button class="btn-reset info-btn">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                </label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="label-address">
+                    Адрес
+                  </label>
+                  <span class="tooltip">
+                    <button class="btn-reset btn-tooltip" type="button" aria-labelledby="tooltip-label-address">
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и
+                      квартиры
+                    </span>
+                  </span>
+                </span>
                 <input class="input-form" type="text" name="address" id="label-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </div>

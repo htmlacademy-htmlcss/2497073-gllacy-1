@@ -881,6 +881,42 @@ body {
   font-weight: 700;
 }
 
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+.btn-tooltip {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  width: 162px;
+  padding: 10px 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #565c66;
+  border-radius: 1px;
+  box-shadow: 0 2px 12px 0 rgba(173, 152, 143, 0.18);
+  background-color: #fcfcfc;
+  display: none;
+}
+
+.btn-tooltip:hover + .tooltip-text,
+.btn-tooltip:focus-visible + .tooltip-text {
+  display: block;
+}
+
 .address-container {
   padding: 63px;
   padding-right: 763px;
@@ -1894,7 +1930,6 @@ body {
   line-height: 20px;
   color: #b9b9b9;
 }
-
 
 .modal-textarea {
   height: 150px;
