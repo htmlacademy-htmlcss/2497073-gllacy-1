@@ -627,6 +627,10 @@ body {
   color: #2d3440;
 }
 
+.products-link:focus-visible .products-img {
+  outline: 2px solid #2d3440;
+}
+
 .products-img-wrapper {
   position: absolute;
   top: -18%;
@@ -837,6 +841,11 @@ body {
   padding: 32px 235px 68px 32px;
   text-decoration: none;
   color: #565c66;
+}
+
+.news-link:focus-visible {
+  outline: 2px solid #2d3440;
+  border-radius: 16px;
 }
 
 .news-slogan {
@@ -1086,6 +1095,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.btn-tooltip:focus-visible {
+  border-radius: 16px;
+  outline: 1px solid #2d3440;
+}
+
 .tooltip-text {
   position: absolute;
   top: -11px;
@@ -1254,6 +1268,11 @@ body {
   text-decoration: none;
 }
 
+.footer-menu-link:focus-visible {
+  outline: 2px solid #2d3440;
+  border-radius: 4px;
+}
+
 .footer-menu-activ {
   font-weight: 700;
 }
@@ -1278,6 +1297,11 @@ body {
   margin-bottom: 14px;
 }
 
+.footer-logo:focus-visible {
+  outline: 2px solid #2d3440;
+  border-radius: 4px;
+}
+
 .footer-copyright-text {
   margin: 0;
   font-size: 12px;
@@ -1294,6 +1318,10 @@ body {
   color: #2d3440;
 }
 
+.footer-copyright-link:focus-visible {
+  outline: 2px solid #2d3440;
+  border-radius: 4px;
+}
 
 /* Страница каталога */
 
@@ -1535,6 +1563,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 8px 24px;
   border-radius: 18px;
@@ -1717,6 +1746,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 170px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1728,6 +1758,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
   list-style: none;
 }
 
