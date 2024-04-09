@@ -1380,6 +1380,11 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #2d3440;
+  border-radius: 4px;
+}
+
 .breadcrumbs-link-activ {
   border-bottom: 1px solid #2d3440;
 }
@@ -1746,7 +1751,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 173px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
