@@ -880,24 +880,7 @@ body {
   outline: 1px solid #2d3440;
 }
 
-.input-form:invalid {
-  border: 1px solid #ea5454;
-  outline: none;
-}
-
-.input-form:invalid:-moz-placeholder-shown {
-  border: 1px solid #b9b9b9;
-}
-
-.input-form:invalid:-ms-input-placeholder {
-  border: 1px solid #b9b9b9;
-}
-
-.input-form:invalid:placeholder-shown {
-  border: 1px solid #b9b9b9;
-}
-
-.input-form:invalid:hover:not(:placeholder-shown) {
+.input-form:not(:placeholder-shown):not(:focus-visible):invalid {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
