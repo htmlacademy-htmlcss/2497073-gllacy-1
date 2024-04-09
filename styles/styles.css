@@ -691,6 +691,7 @@ body {
 
 .products-button:disabled {
   background: #b9b9b9;
+  pointer-events: none;
 }
 
 .ceo-container {
@@ -885,6 +886,7 @@ body {
 }
 
 .input-form:disabled {
+  pointer-events: none;
   background: #e7e7e7;
   opacity: 0.65;
 }
@@ -948,6 +950,7 @@ body {
   outline: 4px solid rgba(185, 185, 185, 0.3);
   color: #565c66;
   background: #b9b9b9;
+  pointer-events: none;
 }
 
 .delivery-container {
@@ -1604,6 +1607,7 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   opacity: 0.4;
+  pointer-events: none;
 }
 
 .pagination-container {
@@ -1666,6 +1670,7 @@ body {
 .btn-show:disabled {
   outline: 4px solid rgba(252, 252, 252, 0.4);
   background: #e7e7e7;
+  pointer-events: none;
 }
 
 .pagination-wrapper {
@@ -1722,6 +1727,7 @@ body {
 .pagination-arrow-disabled {
   fill: #2d3440;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .pagination-left:hover,
