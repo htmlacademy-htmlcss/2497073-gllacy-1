@@ -398,6 +398,7 @@ body {
 
 .slider-prev:disabled,
 .slider-next:disabled {
+  pointer-events: none;
   background: rgba(252, 252, 252, 0.3);
   opacity: 0.4;
 }
@@ -896,7 +897,7 @@ body {
   border: 1px solid #b9b9b9;
 }
 
-.input-form:invalid:hover {
+.input-form:invalid:hover:not(:placeholder-shown) {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
