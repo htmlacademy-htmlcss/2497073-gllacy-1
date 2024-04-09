@@ -282,13 +282,21 @@ body {
   line-height: 24px;
 }
 
+.slider-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -26px;
+  position: relative;
+  z-index: 1;
+}
+
 .slider-pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
   margin: 0;
-  margin-top: -10px;
+  margin-top: 4px;
   padding: 0;
   list-style: none;
 }
@@ -431,8 +439,6 @@ body {
   background: rgba(252, 252, 252, 0.3);
   opacity: 0.4;
 }
-
-
 
 .slider-img-hero {
   height: 100%;
@@ -1159,7 +1165,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  margin-top: -26px;
   padding: 0;
   width: 106px;
   list-style: none;
