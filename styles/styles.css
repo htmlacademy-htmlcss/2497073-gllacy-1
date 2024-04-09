@@ -486,11 +486,6 @@ body {
   background: #fcfcfc;
 }
 
-.btn-link:disabled {
-  outline: 4px solid rgba(252, 252, 252, 0.4);
-  background: #e7e7e7;
-}
-
 .title {
   margin: 0 auto;
   margin-bottom: 56px;
@@ -2119,12 +2114,6 @@ body {
   -webkit-box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   background: #feafc3;
-}
-
-.popover-link:disabled {
-  outline: 4px solid rgba(185, 185, 185, 0.3);
-  color: #565c66;
-  background: #b9b9b9;
 }
 
 .popover-total-price {
