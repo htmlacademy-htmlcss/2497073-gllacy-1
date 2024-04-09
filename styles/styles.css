@@ -134,9 +134,10 @@ body {
 
 .nav-link {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 14px;
   text-align: center;
   text-decoration: none;
+  border: 2px solid transparent;
   color: #2d3440;
 }
 
@@ -146,9 +147,10 @@ body {
 }
 
 .nav-link:focus-visible {
-  outline: 2px solid #2d3440;
+  border: 2px solid #2d3440;
   border-radius: 30px;
   background: rgba(252, 252, 252, 0.5);
+  outline: none;
 }
 
 .nav-link:active {
@@ -193,18 +195,42 @@ body {
   position: relative;
   min-width: 16px;
   min-height: 16px;
-
-  padding: 6px 16px 6px 39px;
+  margin-left: -3px;
+  padding: 6px 14px 6px 39px;
   font-size: 14px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.3);
 }
+
+/* Класс для активного состояния ссылок хейдера */
+/* .nav-link-open {
+  color: #fcfcfc;
+  border-radius: 30px;
+  background-color: #ff4a78;
+}
+
+.nav-link-open:hover {
+  background-color: #ff4a78;
+  opacity: 0.6;
+}
+
+.nav-link-open:focus-visible {
+  background-color: #ff4a78;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.nav-link-open:active {
+  background-color: #ff4a78;
+  opacity: 0.3;
+} */
 
 .nav-link-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 8px;
+  margin-left: -4px;
 }
 
 .nav-search {
@@ -701,6 +727,7 @@ body {
 
 .products-button:disabled {
   background: #b9b9b9;
+  color: #565c66;
   pointer-events: none;
 }
 
