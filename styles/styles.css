@@ -2252,7 +2252,7 @@ body {
 .modal-input,
 .modal-textarea {
   width: 100%;
-  padding: 14px 16px;
+  padding: 15px 16px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   background-color: #fff;
@@ -2306,7 +2306,8 @@ body {
 
 .btn-modal-feedback {
   margin-left: auto;
-  margin-top: 16px;
+  margin-top: 12px;
+  padding: 12px 30px;
 }
 
 .modal-container-close {
