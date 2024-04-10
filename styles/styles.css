@@ -774,6 +774,7 @@ body {
 .ceo-item {
   position: relative;
   width: 506px;
+  min-height: 50px;
   padding-left: 64px;
 }
 
@@ -784,11 +785,12 @@ body {
 
 .ceo-svg::before {
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   right: 16px;
   bottom: 18px;
-  content: "";
+  height: 100%;
   background-repeat: no-repeat;
 }
 
