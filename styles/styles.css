@@ -961,7 +961,7 @@ body {
   display: inline-grid;
   place-items: center;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1108,7 +1108,7 @@ body {
   left: 20px;
   width: 162px;
   padding: 10px 8px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1164,7 +1164,7 @@ body {
 }
 
 .address-phone {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
@@ -1262,7 +1262,7 @@ body {
 }
 
 .footer-menu-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1311,7 +1311,7 @@ body {
 }
 
 .footer-copyright-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1416,7 +1416,7 @@ body {
   width: 100%;
   padding: 8px 16px;
   padding-right: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1459,7 +1459,7 @@ body {
 }
 
 .range-input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
@@ -1653,7 +1653,7 @@ body {
   align-self: end;
   min-width: 185px;
   min-height: 36px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -1709,7 +1709,7 @@ body {
   margin: 41px;
   margin-right: 331px;
   padding: 12px 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1906,7 +1906,7 @@ body {
   width: 441px;
   min-height: 156px;
   padding: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   color: #2d3440;
   border-radius: 4px;
   background: #fcfcfc;
@@ -1942,35 +1942,35 @@ body {
 }
 
 .search-input::-webkit-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
 }
 
 .search-input::-moz-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
 }
 
 .search-input:-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
 }
 
 .search-input::-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
 }
 
 .search-input::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -1996,35 +1996,35 @@ body {
 }
 
 .popover-input[type="email"]::-webkit-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
 }
 
 .popover-input[type="email"]::-moz-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
 }
 
 .popover-input[type="email"]:-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
 }
 
 .popover-input[type="email"]::-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
 }
 
 .popover-input[type="email"]::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
@@ -2271,7 +2271,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -2304,7 +2304,7 @@ body {
 
 .modal-input::-webkit-input-placeholder,
 .modal-textarea::-webkit-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2313,7 +2313,7 @@ body {
 
 .modal-input::-moz-placeholder,
 .modal-textarea::-moz-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2322,7 +2322,7 @@ body {
 
 .modal-input:-ms-input-placeholder,
 .modal-textarea:-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2331,7 +2331,7 @@ body {
 
 .modal-input::-ms-input-placeholder,
 .modal-textarea::-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2340,7 +2340,7 @@ body {
 
 .modal-input::placeholder,
 .modal-textarea::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
