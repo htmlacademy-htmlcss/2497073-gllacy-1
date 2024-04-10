@@ -196,7 +196,7 @@ body {
   min-width: 16px;
   min-height: 16px;
   margin-left: -3px;
-  padding: 6px 14px 6px 39px;
+  padding: 7px 14px 7px 41px;
   font-size: 14px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -231,7 +231,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 8px;
-  margin-left: -4px;
+  margin-left: -3px;
 }
 
 .nav-search {
