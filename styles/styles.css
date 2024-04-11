@@ -634,8 +634,8 @@ body {
 
 .products-img-wrapper {
   position: absolute;
-  top: -18%;
-  left: 50%;
+  top: -51px;
+  left: 135px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1604,10 +1604,6 @@ body {
 }
 
 .control:hover .control-mark {
-  border: 1px solid #fcfcfc;
-}
-
-.control:focus-visible + .control-input {
   border: 1px solid #fcfcfc;
 }
 
