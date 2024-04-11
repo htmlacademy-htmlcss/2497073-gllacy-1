@@ -1754,7 +1754,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 173px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1766,7 +1765,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   row-gap: 5px;
   list-style: none;
 }
