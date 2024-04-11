@@ -555,7 +555,8 @@ body {
   display: flex;
   max-width: 570px;
   border-radius: 16px;
-  background-color: #f79;
+  background-color: #ff7799;
+  ;
 }
 
 .banner-wrapper {
@@ -746,7 +747,7 @@ body {
 .ceo-box {
   padding: 57px 40px;
   border-radius: 16px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .ceo-title {
@@ -877,7 +878,7 @@ body {
   border-radius: 16px;
   padding: 26px;
   padding-bottom: 28px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .subscribe-descr {
@@ -894,7 +895,7 @@ body {
   font: inherit;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .input-form::-webkit-input-placeholder {
@@ -1606,6 +1607,10 @@ body {
   border: 1px solid #fcfcfc;
 }
 
+.control:focus-visible + .control-input {
+  border: 1px solid #fcfcfc;
+}
+
 .control-input:disabled + .control-mark {
   opacity: 0.4;
   cursor: none;
@@ -1886,7 +1891,7 @@ body {
 }
 
 .popover-catalog-link:active {
-  background: #f79;
+  background: #ff7799;
 }
 
 .popover-catalog-link:current {
@@ -1938,7 +1943,7 @@ body {
   padding: 16px 16px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .search-input::-webkit-input-placeholder {
@@ -2304,7 +2309,7 @@ body {
   padding: 15px 16px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .modal-input::-webkit-input-placeholder,
