@@ -212,6 +212,10 @@ body {
   display: block;
 }
 
+.nav-item:hover .popover-catalog {
+  display: block;
+}
+
 .nav-item:focus-within .nav-link-open,
 .nav-user-item:focus-within .nav-link-open {
   color: #fcfcfc;
@@ -1855,6 +1859,10 @@ body {
 
 .nav-item {
   position: relative;
+}
+
+.popover-box {
+  padding: 3px;
 }
 
 .popover-catalog {
