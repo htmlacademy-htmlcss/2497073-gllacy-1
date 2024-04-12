@@ -1180,7 +1180,7 @@ body {
 }
 
 .footer-wrapper {
-  margin-top: -82px;
+  margin-top: -2px;
   margin-bottom: 0;
 }
 
@@ -1395,6 +1395,10 @@ body {
 .breadcrumbs-title {
   margin: 0;
   text-align: left;
+}
+
+.catalog-container {
+  margin-bottom: 0;
 }
 
 .select-form-wrapper {
