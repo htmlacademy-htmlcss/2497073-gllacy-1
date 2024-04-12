@@ -208,27 +208,35 @@ body {
 
 /* Класс для активного состояния ссылок хейдера */
 
-/* .nav-link-open {
+.nav-item:focus-within .popover-catalog {
+  display: block;
+}
+
+.nav-item:focus-within .nav-link-open,
+.nav-user-item:focus-within .nav-link-open {
   color: #fcfcfc;
   border-radius: 30px;
   background-color: #ff4a78;
 }
 
-.nav-link-open:hover {
+.nav-item:hover .nav-link-open,
+.nav-user-item:hover .nav-link-open {
   background-color: #ff4a78;
   opacity: 0.6;
 }
 
-.nav-link-open:focus-visible {
+.nav-item:focus-visible .nav-link-open,
+.nav-user-item:focus-visible .nav-link-open {
   background-color: #ff4a78;
   border: 2px solid #000;
   outline: none;
 }
 
-.nav-link-open:active {
+.nav-item:active .nav-link-open,
+.nav-user-item:active .nav-link-open {
   background-color: #ff4a78;
   opacity: 0.3;
-} */
+}
 
 .nav-link-search {
   display: -webkit-box;
@@ -1931,9 +1939,9 @@ body {
   display: none;
 }
 
-/* .popover-open {
+.nav-user-item:focus-within .popover-open {
   display: block;
-} */
+}
 
 .popover-search {
   position: absolute;
