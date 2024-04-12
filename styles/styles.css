@@ -91,6 +91,10 @@ body {
   padding: 0 15px;
 }
 
+.address-wrapper {
+  margin-bottom: 0;
+}
+
 .header-container,
 .footer-container,
 .address-container {
@@ -585,6 +589,10 @@ body {
   margin: 0;
   margin-bottom: 28px;
   line-height: 22px;
+}
+
+.banner-img {
+  align-self: flex-end;
 }
 
 .products-title {
