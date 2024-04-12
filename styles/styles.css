@@ -1619,6 +1619,11 @@ body {
   border: 1px solid #fcfcfc;
 }
 
+.control:focus-within {
+  outline: 2px solid #fcfcfc;
+  border-radius: 4px;
+}
+
 .control-input:disabled + .control-mark {
   opacity: 0.4;
   cursor: none;
