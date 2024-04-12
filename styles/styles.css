@@ -219,21 +219,21 @@ body {
   background-color: #ff4a78;
 }
 
-.nav-item:hover .nav-link-open,
-.nav-user-item:hover .nav-link-open {
+.nav-item:focus-within .nav-link-open:hover,
+.nav-user-item:focus-within .nav-link-open:hover {
   background-color: #ff4a78;
   opacity: 0.6;
 }
 
-.nav-item:focus-visible .nav-link-open,
-.nav-user-item:focus-visible .nav-link-open {
+.nav-item:focus-within .nav-link-open:focus-visible,
+.nav-user-item:focus-within .nav-link-open:focus-visible {
   background-color: #ff4a78;
   border: 2px solid #000;
   outline: none;
 }
 
-.nav-item:active .nav-link-open,
-.nav-user-item:active .nav-link-open {
+.nav-item:focus-within .nav-link-open:active,
+.nav-user-item:focus-within .nav-link-open:active {
   background-color: #ff4a78;
   opacity: 0.3;
 }
