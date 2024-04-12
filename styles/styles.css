@@ -285,11 +285,11 @@ body {
   z-index: 1;
 }
 
-.slider-descr {
+.slider-description {
   max-width: 502px;
 }
 
-.slider-descr-wrapper {
+.slider-description-wrapper {
   padding: 136px 0 126px 70px;
 }
 
@@ -581,7 +581,7 @@ body {
   line-height: 30px;
 }
 
-.banner-descr {
+.banner-description {
   margin: 0;
   margin-bottom: 28px;
   line-height: 22px;
@@ -678,7 +678,7 @@ body {
   line-height: 24px;
 }
 
-.products-descr {
+.products-description {
   margin: 0;
   margin-bottom: 16px;
   line-height: 22px;
@@ -779,7 +779,7 @@ body {
   padding-left: 64px;
 }
 
-.ceo-descr {
+.ceo-description {
   margin: 0;
   line-height: 22px;
 }
@@ -881,7 +881,7 @@ body {
   background-color: #ffffff;
 }
 
-.subscribe-descr {
+.subscribe-description {
   margin: 0;
   margin-bottom: 42px;
   width: 506px;
@@ -1027,7 +1027,7 @@ body {
   text-align: left;
 }
 
-.delivery-descr {
+.delivery-description {
   margin: 0;
   line-height: 22px;
   color: #565c66;
@@ -1043,7 +1043,7 @@ body {
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
-.delivery-descr-form {
+.delivery-description-form {
   margin-bottom: 32px;
 }
 
