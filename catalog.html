@@ -26,6 +26,27 @@
                     d="M1.80812 1.0532C1.54777 0.792853 1.12566 0.792853 0.865306 1.0532C0.604957 1.31355 0.604957 1.73566 0.865306 1.99601L5.52565 6.65636C5.52771 6.65847 5.52979 6.66058 5.53189 6.66268C5.66259 6.79337 5.83404 6.85846 6.00534 6.85794C6.1753 6.85744 6.34511 6.79236 6.47478 6.66268C6.47687 6.66059 6.47894 6.6585 6.48099 6.65639L11.1414 1.99601C11.4017 1.73566 11.4017 1.31355 11.1414 1.0532C10.881 0.792853 10.4589 0.792853 10.1986 1.0532L6.00334 5.24842L1.80812 1.0532Z" />
                 </svg>
               </a>
+              <div class="popover-box">
+                <div class="popover-catalog">
+                  <ul class="popover-catalog-list">
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Новинки</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Доставка и оплата</a>
@@ -45,8 +66,13 @@
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.66329 6.18794C1.66329 3.61061 3.75263 1.52128 6.32996 1.52128C8.90729 1.52128 10.9966 3.61061 10.9966 6.18794C10.9966 7.44522 10.4994 8.58636 9.69093 9.42549C9.66808 9.44305 9.64612 9.46229 9.62519 9.48321C9.60427 9.50413 9.58503 9.5261 9.56748 9.54894C8.72835 10.3574 7.58722 10.8546 6.32996 10.8546C3.75263 10.8546 1.66329 8.76527 1.66329 6.18794ZM10.0751 10.8759C9.04862 11.697 7.74662 12.1879 6.32996 12.1879C3.01625 12.1879 0.329956 9.50165 0.329956 6.18794C0.329956 2.87423 3.01625 0.187943 6.32996 0.187943C9.64367 0.187943 12.33 2.87423 12.33 6.18794C12.33 7.60463 11.839 8.90663 11.0179 9.93308L13.468 12.3832C13.7284 12.6436 13.7284 13.0657 13.468 13.326C13.2077 13.5864 12.7855 13.5864 12.5252 13.326L10.0751 10.8759Z" />
                 </svg>
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск по сайту</span>
               </button>
+              <div class="popover-search popover-open">
+                <form action="https://echo.htmlacademy.ru" method="get">
+                  <input class="popover-input search-input" type="search" placeholder="Поиск по сайту">
+                </form>
+              </div>
             </li>
             <li class="nav-user-item">
               <button class="nav-user-link nav-link nav-link-open btn-reset" type="button">
@@ -57,6 +83,24 @@
                 </svg>
                 Вход
               </button>
+              <div class="popover popover-login popover-open">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="popover-login-form">
+                    <legend class="popover-title">Личный кабинет</legend>
+                    <input class="popover-input login-input" type="email" name="email-user"
+                      placeholder="email@example.com" required>
+                    <input class="popover-input login-input" type="password" name="password-user">
+                    <div class="popover-btn-wrapper">
+                      <button class="btn-reset btn-form btn-form-login" type="submit"
+                        name="form-user-submit">Войти</button>
+                      <div>
+                        <a class="popover-user-link" href="#">Забыли пароль?</a>
+                        <a class="popover-user-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
             </li>
             <li class="nav-user-item">
               <button class="nav-user-link nav-link nav-link-open btn-reset" type="button">
